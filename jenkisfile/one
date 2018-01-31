@@ -1,0 +1,7 @@
+@Library('github.com/marthanda93/example@k9test') _
+
+import org.k9.*
+
+param = ["version":"2.7.3"]
+
+new demo.One(this,param).tdemo()
