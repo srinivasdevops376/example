@@ -1,7 +1,7 @@
 
 package org.k9.demo 
 
-class One {
+class Hello {
   def config
   def script
 
@@ -11,8 +11,7 @@ class One {
   }
 
   void tdemo() {
-    this.script.stage('Building Image') {
-       this.script.echo "stage 1" + this.config.version
+    echo "Hello World"
     }
   }
 }
