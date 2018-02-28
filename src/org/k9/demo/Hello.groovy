@@ -1,17 +1,6 @@
 package org.k9.demo 
 
-class Hello {
-  def config
-  def script
-
-  One(script, config) {
-    this.config = config
-    this.script = script
-  }
-
-  void tdemo() {
-    this.script.stage('Building Image') {
-       this.script.echo "stage 1" + this.config.version
-    }
-  }
+def checkOutFrom(repo) {
+  git url: "git@github.com:srinivasdevops376/${repo}"
 }
+
