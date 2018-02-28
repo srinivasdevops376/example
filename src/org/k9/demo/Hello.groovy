@@ -4,7 +4,7 @@ class Hello {
   def config
   def script
 
-  Hello(script, config) {
+  One(script, config) {
     this.config = config
     this.script = script
   }
