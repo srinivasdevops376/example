@@ -1,5 +1,7 @@
 package org.k9.demo 
 
-class One {
-  echo "Hello World"
+class Hello {
+  static def mvn(script, args) {
+     echo "Hello World"    
+  }
 }
