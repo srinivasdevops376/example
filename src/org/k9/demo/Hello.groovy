@@ -11,7 +11,8 @@ class Hello {
   }
 
   void tdemo() {
-    echo "Hello World"
+    this.script.stage('Building Image') {
+       this.script.echo "Hello World" 
     }
   }
 }
