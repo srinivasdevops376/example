@@ -1,7 +1,7 @@
 package org.k9.demo 
 
 class Hello {
-  static def mvn(script, args) {
+  static def Hello(script, args) {
      echo "Hello World"    
   }
 }
