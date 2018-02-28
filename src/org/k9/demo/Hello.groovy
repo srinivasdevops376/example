@@ -1,4 +1,3 @@
-
 package org.k9.demo 
 
 class Hello {
@@ -12,7 +11,7 @@ class Hello {
 
   void tdemo() {
     this.script.stage('Building Image') {
-       this.script.echo "Hello World" 
+       this.script.echo "Hello World" + this.config.version
     }
   }
 }
