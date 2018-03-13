@@ -11,8 +11,9 @@ class Git implements Serializable {
   }
   
   void checkout(){    
-    this.script.stage('checkout')
-    this.script.git(url: this.config.scm_url, branch: this.config.scm_branch)
+    this.script.stage('checkout'){
+        this.script.git(url: this.config.scm_url, branch: this.config.scm_branch)
+    }
   
     }
   }
