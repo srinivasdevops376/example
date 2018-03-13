@@ -10,9 +10,9 @@ class Git implements Serializable {
     this.script = script
   }
   
-  void checkout(){
+  void checkout(){    
     this.script.stage('checkout')
-    this.script.sh "checkout"
+    this.script.git(url: this.config.scm_url, branch: this.config.scm_branch)
   
     }
   }
