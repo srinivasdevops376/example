@@ -9,24 +9,10 @@ class Git implements Serializable {
     this.config = config
     this.script = script
   }
-
-  void checkout(def url=false, def branch=false, cid=false) {
-    if (url != false) {
-       this.config.url = url
-       if (branch != false) {
-           this.config.branch = branch
-       }
-       if (cid != false && cid.length()>0) {
-           this.config.cid = cid
-       }
-    }
-    if (this.config.url) {
-       this.script.stage('Initialize') {
-         this.script.git(url: this.config.url, branch: this.config.branch.trim(), credentialsId: cid)
-       }
-    } else {
-        error "no URL found for git config --get remote.origin.url "
+  
+  void checkout(){
+    this.script.stage('checkout')
+    this.script.sh "checkout"
+  
     }
   }
-
-}
