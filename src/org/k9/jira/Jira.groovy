@@ -10,8 +10,6 @@ class Jira implements Serializable {
    }
 
    def createTicket() {
-      this.script.jiraNewIssue {
-         issue: this.config, site: 'jira'
-      } 
+      this.script.jiraNewIssue issue: this.config, site: 'jira'
    }
 }
