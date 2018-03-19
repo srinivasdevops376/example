@@ -7,9 +7,9 @@ def call(body) {
 
     node {
 stage('checkout'){
-            steps{
+           
                 git 'https://github.com/srinivasdevops376/example.git'
             }
         }
        }
-      }
+      
