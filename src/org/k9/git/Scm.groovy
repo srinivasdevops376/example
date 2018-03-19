@@ -11,7 +11,7 @@ class Scm implements Serializable {
   }
   
   void checkout(){    
-    this.script.stage('gitclone'){
+    this.script.stage('gitcheckout'){
         this.script.git(url: this.config.scm_url, branch: this.config.scm_branch)
     }
   
